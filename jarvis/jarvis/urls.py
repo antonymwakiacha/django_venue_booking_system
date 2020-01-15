@@ -17,13 +17,16 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
 from django.contrib.auth import views as auth_views
-#from accounts import views
-from main import views
+from accounts.views import  signup,home,success
+from accounts import views
+#from main import views
 urlpatterns = [
     path('',views.home,name='home'),
     #path('',views.new_classrep,name='registration'),
-    url(r'^registration/$',views.new_classrep,name='registration'),
+   
     #path('',views.reg,name='regsuccessful'),
     path('admin/', admin.site.urls),
+    path('registration/',views.signup,name='registration'),
+    path('registrationsuccessful',views.success,name='success'),
     url(r'^login/$', auth_views.LoginView.as_view(template_name='login_user.html'),name='login'),
 ]
