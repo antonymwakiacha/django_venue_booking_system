@@ -1,0 +1,29 @@
+[
+	{
+		"model":"main.Timetable",
+		"p.k":1,
+		"fields":{
+			"status":"booked",
+			"venue_id":"SR18",
+			"school":"biological",
+			"day_of_week":"monday",
+			"duration":"11:00-13:00",
+			"cohort":"CS3.2",
+			"course_code":"COM323E"
+		}
+	},
+
+ 	{
+ 		"model":"main.Timetable",
+ 		"p.k":2,
+ 		"fields":{
+	 		"status":"free",
+	 		"venue_id":"LR3",
+	 		"school":"biological",
+	 		"day_of_week":"tuesday",
+	 		"duration":"11:00-13:00",
+	 		"cohort":"CS3.1",
+	 		"course_code":""
+ 		}
+ 	}
+]

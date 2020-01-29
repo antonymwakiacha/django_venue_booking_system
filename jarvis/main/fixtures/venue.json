@@ -1,0 +1,18 @@
+[
+  {
+    "model": "main.Venue",
+    "pk": 1,
+    "fields": {
+      "school": "Biological",
+      "capacity": "80"
+    }
+  },
+  {
+    "model": "main.Venue",
+    "pk": 2,
+    "fields": {
+      "school": "Engineering",
+      "capacity": "100"
+    }
+  }
+]

@@ -56,28 +56,31 @@ class ContactUs(models.Model):
 		return self.contactus_id
 
 class Venue(models.Model):
-	venue_id=models.IntegerField(null=True)
+	#venue_id=models.IntegerField(null=True)
 	school=models.CharField(max_length=200,null=True)
 	capacity=models.IntegerField(null=True)
 
 	def __str__(self):
-		return self.venue_id
+		return self.school
 
 class Timetable(models.Model):
 	
 
-	timetable_id=models.IntegerField(null=True)
+	#timetable_id=models.IntegerField(null=True)
+	#timetable_id=models.CharField(max_length=200,null=True)
 	status=models.CharField(max_length=200,null=True)	
 
 	venue_id=models.CharField(max_length=200,null=True)
+	#status=models.CharField(max_length=200,null=True)
 	school=models.CharField(max_length=200,null=True)
 	day_of_week=models.CharField(max_length=200,null=True)
 	duration=models.CharField(max_length=200,null=True)
 	cohort=models.CharField(max_length=200,null=True)
 	course_code=models.CharField(max_length=200,null=True)
 
-	def __str__(self):
-		return self.timetable_id
+	
+
+
 
 class Transaction(models.Model):
 	#Constants in this class

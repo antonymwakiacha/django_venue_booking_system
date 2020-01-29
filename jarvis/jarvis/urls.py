@@ -28,5 +28,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('registration/',views.signup,name='registration'),
     path('registrationsuccessful',views.success,name='success'),
-    url(r'^login/$', auth_views.LoginView.as_view(template_name='login_user.html'),name='login'),
+    path('login/',views.login_view,name="login"),
+    path('loggedin',views.loggedin,name='loggedin'),
+    #url(r'^login/$', auth_views.LoginView.as_view(template_name='login_user.html'),name='login'),
 ]
